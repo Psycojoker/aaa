@@ -8,7 +8,7 @@ Let's create a virtualenv:
 
 Activate it:
 
-    source ve/bin/active
+    source ve/bin/activate
 
 Install requirements:
 
