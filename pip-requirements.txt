@@ -1,2 +1,2 @@
 django
-flatblocks
+django-flatblocks
