@@ -15,12 +15,12 @@ MANAGERS = ADMINS
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3', # Add 'postgresql_psycopg2', 'postgresql', 'mysql', 'sqlite3' or 'oracle'.
-        'NAME': 'aaa.db',                      # Or path to database file if using sqlite3.
-        'USER': '',                      # Not used with sqlite3.
-        'PASSWORD': '',                  # Not used with sqlite3.
-        'HOST': '',                      # Set to empty string for localhost. Not used with sqlite3.
-        'PORT': '',                      # Set to empty string for default. Not used with sqlite3.
+	'ENGINE': 'django.db.backends.sqlite3', # Add 'postgresql_psycopg2', 'postgresql', 'mysql', 'sqlite3' or 'oracle'.
+	'NAME': 'aaa.db',		       # Or path to database file if using sqlite3.
+	'USER': '',			 # Not used with sqlite3.
+	'PASSWORD': '',			 # Not used with sqlite3.
+	'HOST': '',			 # Set to empty string for localhost. Not used with sqlite3.
+	'PORT': '',			 # Set to empty string for default. Not used with sqlite3.
     }
 }
 
@@ -36,6 +36,13 @@ TIME_ZONE = 'America/Chicago'
 # Language code for this installation. All choices can be found here:
 # http://www.i18nguy.com/unicode/language-identifiers.html
 LANGUAGE_CODE = 'en-us'
+
+# Added by Siltaar - 20120314
+MIDDLEWARE_CLASSES = (
+   'django.contrib.sessions.middleware.SessionMiddleware',
+   'django.middleware.locale.LocaleMiddleware',
+   'django.middleware.common.CommonMiddleware',
+)
 
 SITE_ID = 1
 
@@ -138,16 +145,16 @@ LOGGING = {
     'version': 1,
     'disable_existing_loggers': False,
     'handlers': {
-        'mail_admins': {
-            'level': 'ERROR',
-            'class': 'django.utils.log.AdminEmailHandler'
-        }
+	'mail_admins': {
+	    'level': 'ERROR',
+	    'class': 'django.utils.log.AdminEmailHandler'
+	}
     },
     'loggers': {
-        'django.request': {
-            'handlers': ['mail_admins'],
-            'level': 'ERROR',
-            'propagate': True,
-        },
+	'django.request': {
+	    'handlers': ['mail_admins'],
+	    'level': 'ERROR',
+	    'propagate': True,
+	},
     }
 }

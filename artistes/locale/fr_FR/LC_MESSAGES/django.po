@@ -1,0 +1,22 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# Simon Descarpentries <sid@sopinspace.com>, 2012
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-03-15 18:08+0100\n"
+"POT-Creation-Date: 2012-03-15 18:08+0100\n"
+"Last-Translator: Simon Descarpentries <sid@sopinspace.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: templates/artistes/artiste_list.html:6
+msgid "ACTA - Not In My Name"
+msgstr "ACTA - Pas en mon nom"
