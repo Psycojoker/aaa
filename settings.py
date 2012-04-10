@@ -126,6 +126,11 @@ INSTALLED_APPS = (
     'django.contrib.admindocs',
     'artistes',
     'flatblocks',
+    'basic.blog',
+    'basic.inlines',
+    'tagging',
+    'django.contrib.markup',
+    'django.contrib.comments',
 )
 
 # A sample logging configuration. The only tangible logging
