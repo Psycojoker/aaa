@@ -12,7 +12,7 @@ Activate it:
 
 Install requirements:
 
-    pip install -r pip-requirements.txt
+    pip install -r requirements.txt
 
 Let's synchronize the db:
 
