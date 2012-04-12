@@ -131,6 +131,7 @@ INSTALLED_APPS = (
     'tagging',
     'django.contrib.markup',
     'django.contrib.comments',
+    'contact_form',
 )
 
 # A sample logging configuration. The only tangible logging

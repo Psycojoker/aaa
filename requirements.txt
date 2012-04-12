@@ -2,3 +2,4 @@ django
 django-flatblocks
 django-tagging
 beautifulsoup
+hg+https://bitbucket.org/gregmuellegger/django-contact-form-i18n#egg=django-contact-form
