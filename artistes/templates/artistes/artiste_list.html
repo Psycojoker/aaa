@@ -1,12 +1,6 @@
 {% extends "base.html" %}
-{% load i18n %}
 
 {% block content %}
-<div class="wrapper">
-<h1>{% trans "ACTA - Not In My Name" %}</h1>
-
-<h2>When industry lobbies claim to advocate in favour of ACTA on behalf of artists, some of them stand up to make their voice heard.</h2>
-
 <h2>ACTA: Not in Our Name</h2>
 
 <p>
@@ -32,5 +26,4 @@ for all other
 <li><a href="{{ a.url }}"><img src="/static/{{ a.pic }}" alt="{{ a.first_name }} {{ a.last_name }}" width="174px" height="174px"><q>{{ a.quote }}</q></a></li>
 {% endfor %}
 </ul>
-</div>
 {% endblock %}
