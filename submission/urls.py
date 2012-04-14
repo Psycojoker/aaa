@@ -2,7 +2,7 @@ from django.conf.urls.defaults import patterns, url
 from django.core.urlresolvers import reverse
 
 from django.forms.models import modelform_factory
-from django.views.generic import CreateView
+from django.views.generic import CreateView, ListView
 from artistes.models import Artiste
 
 class ArtisteCreateView(CreateView):
@@ -17,4 +17,5 @@ class ArtisteCreateView(CreateView):
 
 urlpatterns = patterns('',
     url(r'^$', ArtisteCreateView.as_view(), name='submit'),
+    url(r'^moderation/$', ListView.as_view(queryset=Artiste.objects.filter(published=None), template_name="artistes/moderation.html"), name='moderation'),
 )

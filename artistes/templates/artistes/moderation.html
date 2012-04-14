@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block content %}
+{% if object_list %}
+<ul>
+{% for artiste in object_list %}
+<li>
+    <p>Artiste:</p>
+    <ul>
+        <li>First name: <i>{{ artiste.first_name }}</i></li>
+        <li>Last name: <i>{{ artiste.last_name }}</i></li>
+        <li>Quote: <i>{{ artiste.quote }}</i></li>
+        <li>Url: <i><a href="{{ artiste.url }}">{{ artiste.url }}</a></i></li>
+        <li>Pic: <img src="/static/{{ artiste.pic }}"></li>
+    </ul>
+</li>
+{% endfor %}
+</ul>
+{% else %}
+<p>No submissions.</p>
+{% endif %}
+{% endblock %}
