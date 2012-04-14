@@ -6,6 +6,7 @@ class Artiste(models.Model):
     pic = models.FileField(upload_to="pics")
     quote = models.CharField(max_length=500)
     url = models.CharField(max_length=500)
+    published = models.NullBooleanField(default=None)
 
     class Meta:
         ordering = ['last_name', 'first_name']
