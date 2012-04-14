@@ -15,7 +15,9 @@ class ArtisteCreateView(CreateView):
     def get_success_url(self):
         return reverse("home")
 
-urlpatterns = patterns('',
+urlpatterns = patterns('submission.views',
     url(r'^$', ArtisteCreateView.as_view(), name='submit'),
     url(r'^moderation/$', ListView.as_view(queryset=Artiste.objects.filter(published=None), template_name="artistes/moderation.html"), name='moderation'),
+    url(r'^moderation/accept/(?P<pk>[0-9]+)/$', 'accept', name='accept'),
+    url(r'^moderation/reject/(?P<pk>[0-9]+)/$', 'reject', name='reject'),
 )
