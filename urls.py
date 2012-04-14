@@ -13,4 +13,5 @@ urlpatterns = patterns('',
     url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
     url(r'^admin/', include(admin.site.urls)),
     url(r'^contact/', include('contact_form.urls')),
+    url(r'^submission/', include('submission.urls')),
 )
