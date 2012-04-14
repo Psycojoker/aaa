@@ -12,7 +12,7 @@
         <li>Quote: <i>{{ artiste.quote }}</i></li>
         <li>Url: <i><a href="{{ artiste.url }}">{{ artiste.url }}</a></i></li>
         <li>Pic: <img src="/static/{{ artiste.pic }}"></li>
-        <li><a href="{% url accept artiste.pk %}">Accept</a> - <a href="{% url reject artiste.pk %}">Reject</a></li>
+        <li><a href="{% url accept artiste.pk %}">Accept</a> - <a href="{% url reject artiste.pk %}">Reject</a> - <a href="/admin/artistes/artiste/{{ artiste.pk }}/">Edit</a></li>
     </ul>
 </li>
 {% endfor %}
